@@ -1,0 +1,68 @@
+:root{
+    --pink:#824a5a;
+}
+
+body {
+    background-image: url('images/background.jpg'); /* Path to your background image */
+    background-size: cover; /* Ensures the image covers the whole screen */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed when scrolling */
+    margin-top: 20px;
+}
+
+.cardbody-color {
+    background-color: #ffffff;
+}
+
+
+
+.btn{
+    display: inline-block;
+    padding: 0.8rem 1rem;
+    border: 0.1rem solid var(--pink);
+    color: var(--pink);
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    margin-top: 1rem;
+}
+
+.btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--pink);
+    transition: .3s linear;
+    z-index: -1;
+}
+
+.btn:hover::before{
+    width: 100%;
+    left: 0;
+}
+
+.btn:hover{
+    color: #fff;
+}
+
+
+.profile-image-pic {
+    box-shadow: 0px 0px 5px 0px #000;
+}
+
+.createAcc {
+    color: var(--pink); 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+.createAcc:hover {
+    color: #4a0331; 
+    text-decoration: underline; 
+}

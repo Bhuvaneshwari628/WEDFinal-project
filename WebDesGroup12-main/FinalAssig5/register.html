@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <!-- Bootstrap CSS -->
+    <!-- favicon added -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="login_style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card my-5">
+                    <form class="card-body cardbody-color p-lg-5 needs-validation" id="registrationForm" method="POST" novalidate>
+                        <div class="text-center">
+                            <img src="images/logo.png"
+                                class="img-fluid profile-image-pic img-thumbnail rounded-circle my-3" width="200px"
+                                alt="profile">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="FirstName" name="FirstName" placeholder="First Name" required>
+                            <div class="invalid-feedback">Please enter your first name.</div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="LastName" name="LastName" placeholder="Last Name" required>
+                            <div class="invalid-feedback">Please enter your last name.</div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="Email" name="Email" placeholder="User Email" required>
+                            <div class="invalid-feedback">Please enter your email.</div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" id="Setpassword" name="Setpassword" 
+                                placeholder="Set Password" 
+                                pattern="(?=.*[0-9])(?=.*[!@#$%^&*]).{8,}" 
+                                title="Password must contain at least one special character, one number, and be at least 8 characters long." 
+                                required>
+                            <div class="invalid-feedback">Please enter a password.</div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" id="Confirmpassword" name="Confirmpassword" placeholder="Confirm Password" required>
+                            <div class="invalid-feedback">Please confirm your password.</div>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-color px-5 mb-5 w-100">Register</button>
+                        </div>
+                    </form>
+                
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Bootstrap validation
+        (function () {
+            'use strict';
+
+            var forms = document.querySelectorAll('.needs-validation');
+
+            Array.prototype.slice.call(forms).forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault(); // Prevent form submission
+                        event.stopPropagation(); // Stop the event from propagating
+                    } else {
+                        // If the form is valid, navigate to login.html
+                        event.preventDefault(); // Prevent default form submission
+                        window.location.href = 'login.html'; // Redirect to login page
+                    }
+                    form.classList.add('was-validated'); // Add validation class
+                }, false);
+            });
+        })();
+    </script>
+</body>
+<<<<<<< HEAD
+</html>
+
+=======
+
+</html>
+>>>>>>> a3832598f580a6bc94fdd7fb7ba70c6d95c8d26c
