@@ -5,10 +5,8 @@ Project Title: Frost Fusion
 Description
 Frost Fusion is a fictional ice cream website that showcases:
 
-A variety of delicious ice cream flavors.
-Special deals and promotions.
-Customer reviews and feedback.
-Built with HTML, CSS, Bootstrap, and the MERN Stack, the website delivers a visually appealing, responsive, and user-friendly experience.
+
+A variety of delicious ice cream flavors.Special deals and promotions.Customer reviews and feedback.Built with HTML, CSS, Bootstrap, and the MERN Stack, the website delivers a visually appealing, responsive, and user-friendly experience.
 
 Features
 Responsive Design: Adapts seamlessly to all devices using Bootstrap.
