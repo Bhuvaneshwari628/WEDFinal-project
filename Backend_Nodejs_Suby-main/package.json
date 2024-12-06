@@ -7,7 +7,7 @@
         "dev": "nodemon run dev",
         "start": "node index"
     },
-    "keywords": [],
+    "keywords": ["Test"],
     "author": "Kalyan",
     "license": "ISC",
     "dependencies": {
